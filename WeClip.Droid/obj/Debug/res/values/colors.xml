@@ -1,0 +1,11 @@
+<resources><!--<color name="primary">#5ad2f7</color>
+  <color name="primaryDark">#20c2f4</color>
+  <color name="accent">#77daf8</color>--><color name="primary">#00d6a8</color><color name="primaryDark">#0eb893</color><color name="accent">#00d6a8</color><!--18FFFF--><color name="primaryLight">#B3E5FC</color><color name="primaryText">#212121</color><color name="secondaryText">#757575</color><color name="textOrIcon">#FFFFFF</color><color name="divider">#BDBDBD</color><color name="drawerItemSelected">#0eb893</color><color name="radioButtonCheckedText">#1ED09E</color><color name="radioButtonUnCheckedText">#9D9D9D</color><color name="normalTextColor">#1C312B</color><color name="light_blue">#ff33b5e5</color><color name="light_transparent">#7f33b5e5</color><!--<color name="controlNormal">#0E6C94</color>
+  <color name="controlActivated">#0E6C94</color>
+  <color name="buttonNormal">#0E6C94</color>
+  <color name="controlHighlight">#311B92</color>
+  <color name="switchThumbNormal">#0E6C94</color>
+  <color name="windowBackground">#BFD1DC</color>
+  <color name="homeback">#E6F3FF</color>
+  <color name="black">#999999</color>
+  <color name="textColorPrimary">#FFFFFF</color>--></resources>

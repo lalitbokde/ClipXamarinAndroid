@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BBB627D4-9C11-4F4E-8A79-FE1F4C59C986}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WeClip.Core</RootNamespace>
+    <AssemblyName>WeClip.Core</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Common\EventFiles.cs" />
+    <Compile Include="Common\GetDetails.cs" />
+    <Compile Include="Common\GlobalClass.cs" />
+    <Compile Include="Common\HttpCall.cs" />
+    <Compile Include="Common\JsonResult.cs" />
+    <Compile Include="Common\PostData.cs" />
+    <Compile Include="Common\WeClipVideo.cs" />
+    <Compile Include="Model\Audio.cs" />
+    <Compile Include="Model\Authentication.cs" />
+    <Compile Include="Model\CategoryModel.cs" />
+    <Compile Include="Model\ChangePasswordBindingModel.cs" />
+    <Compile Include="Model\CoHost.cs" />
+    <Compile Include="Model\Contact.cs" />
+    <Compile Include="Model\ContactsModel.cs" />
+    <Compile Include="Model\CrashReportModel.cs" />
+    <Compile Include="Model\Event.cs" />
+    <Compile Include="Model\EventAdmin.cs" />
+    <Compile Include="Model\EventDetails.cs" />
+    <Compile Include="Model\EventDetailsModel.cs" />
+    <Compile Include="Model\EventFeedModel.cs" />
+    <Compile Include="Model\EventModel.cs" />
+    <Compile Include="Model\EventPictureModel.cs" />
+    <Compile Include="Model\EventRequest.cs" />
+    <Compile Include="Model\EventResponse.cs" />
+    <Compile Include="Model\EventSearchData.cs" />
+    <Compile Include="Model\faceBookProfileInfo.cs" />
+    <Compile Include="Model\FriendListModel.cs" />
+    <Compile Include="Model\FriendRequest.cs" />
+    <Compile Include="Model\FriendsDetailModel.cs" />
+    <Compile Include="Model\GetAllEventList.cs" />
+    <Compile Include="Model\GetRequestedFriend_Result.cs" />
+    <Compile Include="Model\GoogleInfo.cs" />
+    <Compile Include="Model\ImageGallery.cs" />
+    <Compile Include="Model\ImageInfo.cs" />
+    <Compile Include="Model\LikeEventData.cs" />
+    <Compile Include="Model\LoginModel.cs" />
+    <Compile Include="Model\MediaFile.cs" />
+    <Compile Include="Model\NotificationModel.cs" />
+    <Compile Include="Model\PrivateEventNotification.cs" />
+    <Compile Include="Model\Profilpic.cs" />
+    <Compile Include="Model\RegistrationModel.cs" />
+    <Compile Include="Model\Reset_AddNewPassword.cs" />
+    <Compile Include="Model\SendInvitationModel.cs" />
+    <Compile Include="Model\SPEventRequestList_Result.cs" />
+    <Compile Include="Model\SPGetSearchUserList_Result.cs" />
+    <Compile Include="Model\SPGetUserFollowers_Result.cs" />
+    <Compile Include="Model\SPGetUserFollowings_Result.cs" />
+    <Compile Include="Model\SP_UserListWithFriends_Result.cs" />
+    <Compile Include="Model\SubCategoryModel.cs" />
+    <Compile Include="Model\Theme.cs" />
+    <Compile Include="Model\Token.cs" />
+    <Compile Include="Model\UserData.cs" />
+    <Compile Include="Model\UserDeviceInfo.cs" />
+    <Compile Include="Model\UserInfo.cs" />
+    <Compile Include="Model\UserProfile.cs" />
+    <Compile Include="Model\VideoDownloadInfo.cs" />
+    <Compile Include="Model\SPGetSearchWeclipList_Result.cs" />
+    <Compile Include="Model\WeClipInfo.cs" />
+    <Compile Include="Model\WeClipPackageInfo.cs" />
+    <Compile Include="Model\WeClipSetting.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\AccountRepository.cs" />
+    <Compile Include="Repository\AudioRepository.cs" />
+    <Compile Include="Repository\CrashRepository.cs" />
+    <Compile Include="Repository\EventRepository.cs" />
+    <Compile Include="Repository\FriendListRepository.cs" />
+    <Compile Include="Service\AccountService.cs" />
+    <Compile Include="Service\AudioService.cs" />
+    <Compile Include="Service\CrashReportService.cs" />
+    <Compile Include="Service\EventService.cs" />
+    <Compile Include="Service\FriendListService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="ModernHttpClient, Version=2.4.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\modernhttpclient.2.4.2\lib\Portable-Net45+WinRT45+WP8+WPA81\ModernHttpClient.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

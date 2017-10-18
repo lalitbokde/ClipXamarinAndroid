@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--For all properties see: http://developer.android.com/guide/topics/resources/menu-resource.html-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+  <item android:id="@+id/action_search"
+    android:icon="@drawable/ic_search_white_24dp"
+   app:showAsAction="ifRoom"/>
+
+  <item android:id="@+id/action_notification" android:title="Notification"
+      android:icon="@drawable/event_notificationsoff"
+     app:showAsAction="ifRoom"/>
+</menu>

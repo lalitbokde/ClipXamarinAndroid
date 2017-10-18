@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:id="@+id/ivContactFriendImage"
+        android:src="@drawable/contact_withoutphoto"
+        android:layout_margin="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" />
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/ivContactFriendImage"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/btnContactFriendInvite">
+        <TextView
+            android:id="@+id/tvContactFriendName"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="16dp"
+            android:textColor="#000000"
+            android:ellipsize="marquee"
+            android:maxLines="2" />
+        <TextView
+            android:id="@+id/tvContactFriendNumber"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="14dp"
+            android:textColor="#000000"
+            android:ellipsize="marquee"
+            android:minLines="2" />
+    </LinearLayout>
+    <Button
+        android:text="Invite"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:id="@+id/btnContactFriendInvite"
+        android:background="@drawable/btn_round_green_border_padding"
+        android:textColor="#04c285"
+        android:textAllCaps="false"
+        android:textSize="16dp"
+        android:textStyle="normal"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp" />
+</RelativeLayout>

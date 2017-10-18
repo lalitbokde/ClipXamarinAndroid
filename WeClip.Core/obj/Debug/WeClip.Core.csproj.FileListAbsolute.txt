@@ -1,0 +1,9 @@
+D:\XamarinWeclip\WeClipXamarin\WeClip.Core\obj\Debug\WeClip.Core.csprojResolveAssemblyReference.cache
+D:\XamarinWeclip\WeClipXamarin\WeClip.Core\bin\Debug\WeClip.Core.dll
+D:\XamarinWeclip\WeClipXamarin\WeClip.Core\bin\Debug\WeClip.Core.pdb
+D:\XamarinWeclip\WeClipXamarin\WeClip.Core\bin\Debug\ModernHttpClient.dll
+D:\XamarinWeclip\WeClipXamarin\WeClip.Core\bin\Debug\Newtonsoft.Json.dll
+D:\XamarinWeclip\WeClipXamarin\WeClip.Core\bin\Debug\Newtonsoft.Json.xml
+D:\XamarinWeclip\WeClipXamarin\WeClip.Core\obj\Debug\WeClip.Core.dll
+D:\XamarinWeclip\WeClipXamarin\WeClip.Core\obj\Debug\WeClip.Core.pdb
+D:\XamarinWeclip\WeClipXamarin\WeClip.Core\obj\Debug\WeClip.Core.csproj.CoreCompileInputs.cache

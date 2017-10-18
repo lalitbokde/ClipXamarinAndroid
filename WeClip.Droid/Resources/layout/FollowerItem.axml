@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants">
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="false"
+        android:id="@+id/ivFollowerPhoto"
+        android:src="@drawable/contact_withoutphoto"
+        android:layout_margin="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:focusable="false" />
+    <TextView
+        android:id="@+id/tvFollowerName"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#000000"
+        android:ellipsize="marquee"
+        android:layout_toRightOf="@+id/ivFollowerPhoto"
+        android:layout_centerInParent="true"
+        android:inputType="textMultiLine"
+        android:layout_toStartOf="@+id/btnFollowerInvite"
+        android:layout_marginRight="5dp"
+        android:maxLines="2"
+        android:focusable="false"
+        android:clickable="false" />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:id="@+id/btnFollowerInvite"
+        android:background="@drawable/btn_round_green_border_padding"
+        android:textColor="#04c285"
+        android:textAllCaps="false"
+        android:textSize="14dp"
+        android:textStyle="normal"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:focusable="false"
+        android:text="Follow" />
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+  <LinearLayout
+      android:layout_height="match_parent"
+      android:layout_width="match_parent"
+      android:fitsSystemWindows="true"
+      android:orientation="vertical">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+      <include
+          layout="@layout/toolbar" />
+    </android.support.design.widget.AppBarLayout>
+    <EditText
+        android:id="@+id/etContactFriendSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search contacts..."
+        android:inputType="textVisiblePassword"
+  android:background="@drawable/border_bottom"
+      />
+    <ListView
+        android:id="@+id/lvContactFriend"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+  </LinearLayout>
+</RelativeLayout>

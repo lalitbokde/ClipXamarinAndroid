@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:id="@+id/ivESFIEventPhoto"
+        android:src="@drawable/contact_withoutphoto"
+        android:layout_margin="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ivESFIEventPhoto"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp">
+        <TextView
+            android:id="@+id/tvESFIEventName"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="16dp"
+            android:singleLine="true"
+            android:textColor="#1C312B"
+            android:ellipsize="marquee"
+            android:text="EventName" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp">
+            <TextView
+                android:id="@+id/tvESFHost"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="14dp"
+                android:singleLine="true"
+                android:textColor="#FF7B41"
+                android:text="Host by" />
+            <TextView
+                android:id="@+id/tvESFIEventHost"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="14dp"
+                android:singleLine="true"
+                android:textColor="#1C312B"
+                android:ellipsize="marquee"
+                android:text="John "
+                android:layout_toRightOf="@+id/tvESFHost"
+                android:layout_marginLeft="3dp" />
+        </RelativeLayout>
+    </LinearLayout>
+    <Button
+        android:text="Invite"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:id="@+id/btnEFIInvite"
+        android:background="@drawable/button_round_green_border"
+        android:textColor="#04c285"
+        android:textAllCaps="false"
+        android:textSize="16dp"
+        android:textStyle="normal"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:visibility="gone" />
+</RelativeLayout>

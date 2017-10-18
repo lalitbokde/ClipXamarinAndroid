@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <style name="MyTheme" parent="MyTheme.Base">
+  </style>
+
+  <!-- Base theme applied no matter what API -->
+  <style name="MyTheme.Base" parent="Theme.AppCompat.Light">
+    <!--<style name="MyTheme.Base" parent="Theme.AppCompat.NoActionBar">-->
+
+
+    <!--<item name="android:windowTranslucentStatus">true</item>-->
+    <!--<item name="android:fitsSystemWindows">true</item>-->
+
+    <!-- If you are using revision 22.1 please use just windowNoTitle. Without android:-->
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionModeOverlay">true</item>
+    <!-- We will be using the toolbar so no need to show ActionBar-->
+    <item name="windowActionBar">false</item>
+
+    <!-- Set theme colors from http://www.google.com/design/spec/style/color.html#color-color-palette-->
+
+    <!-- colorPrimary is used for the default action bar background -->
+    <item name="colorPrimary">@color/primary</item>
+
+    <!-- colorPrimaryDark is used for the status bar-->
+    <item name="colorPrimaryDark">@color/primaryDark</item>
+
+    <!-- colorAccent is used as the default value for colorControlActivated which is used to tint widgets -->
+    <item name="colorAccent">@color/accent</item>
+    <!--<item name="colorControlActivated">#ffffff</item>-->
+    <!--<item name="android:textColorPrimary">@color/primaryText</item> 
+    <item name="android:textColorSecondary">@color/secondaryText</item>-->
+    <item name="actionModeStyle">@style/ActionModeStyle</item>
+    <!-- You can also set colorControlNormal, colorControlActivated colorControlHighlight and colorSwitchThumbNormal. -->
+    <item name="autoCompleteTextViewStyle">@style/cursorColor</item>
+
+    <item name="android:textViewStyle">@style/MyTextViewStyle</item>
+  </style>
+
+  <style name="cursorColor" parent="Widget.AppCompat.AutoCompleteTextView">
+    <item name="android:textCursorDrawable">@drawable/color_cursor</item>
+  </style>
+  
+  
+  <style name="ActionModeStyle" parent="MyTheme.Base">
+    <item name="background">@drawable/toolbar_background</item>
+    <item name="titleTextStyle">@style/myTitleTextStyle</item>
+  </style>
+
+  <style name="myTitleTextStyle" parent="MyTheme.Base">
+    <item name="android:textColor">#FFFFFF</item>
+    <item name="android:textSize">18sp</item>
+    <item name="android:textStyle">normal</item>
+  </style>
+
+  <style name="MyTextViewStyle" parent="android:Widget.TextView">
+    <item name="fontPath">Fonts/Avenir.ttc</item>
+  </style>
+
+  <style name="NavDrawerTextStyle" parent="MyTheme.Base">
+    <item name="android:textColor">@color/primary</item>
+    <item name="android:textSize">16sp</item>
+    <item name="android:textStyle">normal</item>
+  </style>
+
+</resources>

@@ -1,0 +1,15 @@
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" xmlns:android="http://schemas.android.com/apk/res/android"><android.support.design.widget.AppBarLayout android:layout_width="match_parent" android:layout_height="wrap_content"><include layout="@layout/toolbar" /></android.support.design.widget.AppBarLayout><RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"><LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"><GridView android:id="@+id/gvWeClipActivity" android:layout_width="match_parent" android:numColumns="3" android:layout_margin="5dp" android:stretchMode="columnWidth" android:choiceMode="multipleChoice" android:layout_height="match_parent" android:smoothScrollbar="true" android:verticalSpacing="5dp" android:horizontalSpacing="5dp" /></LinearLayout><!--<RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+      <ImageButton
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/ivCreateWeClipNext"
+          android:src="@drawable/savebutton"
+          android:background="@android:color/transparent"
+          android:adjustViewBounds="true"
+          android:layout_centerHorizontal="true"
+          android:layout_centerVertical="true" />
+    </RelativeLayout>--></RelativeLayout></LinearLayout>
